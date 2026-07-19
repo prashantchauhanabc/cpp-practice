@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int number;
+    cout<<"enter the number :";
+    cin>>number;
+    if(number%5 == 0){
+        cout<<"number is divisble by 5";
+    }
+    else{
+        cout<<"number is not divisible by 5";
+    }
+
+    
+    return 0;
+}
