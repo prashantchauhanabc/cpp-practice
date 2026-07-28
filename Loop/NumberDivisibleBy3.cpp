@@ -6,7 +6,7 @@ int main(){
     cin>>b;
     cout<<"Enter a number: ";
     cin>>b;
-    for(int i=1; i<=b; i++){
+    for(int i=a; i<=b; i++){
     if ( i % 3== 0){
             cout<< i << " ";
     }
