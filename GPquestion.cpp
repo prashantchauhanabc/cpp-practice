@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int n;
+    cout<<"Enter a number: ";
+    cin>>n;
+    int a=99,d=4;
+    for(int i=n; i>=1; i--){
+        cout<<a << " ";
+        a-= d;
+    }
+    return 0;
+}
