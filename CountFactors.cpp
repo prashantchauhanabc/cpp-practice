@@ -11,6 +11,9 @@ int main(){
         factors++;
         }
     }
+    if(factors == 1){
+        cout<<"Neither Prime Nor Composite";
+    }
     if(factors >=3){
         cout<<"Composite numbers";
     }
