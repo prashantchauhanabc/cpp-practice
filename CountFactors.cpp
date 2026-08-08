@@ -1,25 +1,24 @@
 #include<iostream>
-#include<cmath>
 using namespace std;
 int main(){
     int n;
     cout<<"Enter a number: ";
     cin>>n;
-    int factors =0;
-    for(int i=1; i<=n; i++){
+    bool prime = true;
+    for(int i=2; i*i<=n; i++){
         if(n%i == 0){
-        factors++;
+        prime =false;
+        break;
         }
     }
-    if(factors == 1){
+    if(n == 1){
         cout<<"Neither Prime Nor Composite";
     }
-    if(factors >=3){
-        cout<<"Composite numbers";
+    if(prime==false){
+        cout<<"Composite number";
     }
     else{
         cout<<"Prime Number";
     }
 
-    return 0;
 }
